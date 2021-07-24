@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create New ChatRoom</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script type="text/javascript" src="/scripts/script.js"></script>
+
+	<style>
+
+		body{
+				font-size: 20px;
+		}
+
+		p{
+			text-indent: 30px;
+		}
+
+		.serif {
+  			font-family: "Times New Roman", Times, serif;
+		}
+
+		.mydiv{
+			padding:16px;
+			margin:10px;
+		}
+
+		button{
+			background-color:black;
+			color:white;
+			padding:10px 22px;
+			margin:8px;
+			display:inline-block;
+			border:none;
+			cursor:pointer;	
+			width:auto;
+			font-size:16px;
+		}	
+	
+		button:hover{
+			opacity:0.6;
+		}	
+
+		a:link, a:visited{
+			color:white;
+			text-decoration:none;
+		}
+
+		table{
+			border-collapse:collapse;
+			width:100%;
+		}
+
+		td,th{
+			border: 1px solid #dddddd;
+			text-align:left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even){
+			background-color:#dddddd;
+		}
+
+	</style>
+</head>
+
+<body>
+<!--sidebar-->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="mental illness.html">Mental Illness</a>
+  <a href="physical illness.html">Physical Illness</a>
+</div>
+
+
+
+<!--Responsive Navbar -->
+<div class="navbar" id="mynavbar">
+	<div id="main">
+ 		 <button class="openbtn" onclick="openNav()">☰ </button>  
+			<div class="navbar-right">
+				<a href="homepage.html" class="active">Home</a>
+				<a href="login.html">Login</a>
+					<div class="dropdown" style="float:right;">
+					  <button onclick="myFunction1()" class="dropbtn">Sign Up<i class="fa fa-caret-down"></i></button>
+ 						 <div id="myDropdown" class="dropdown-content">
+    						<a href="signup as doc.html">As a Doctor</a>
+   							 <a href="signup as patient.html">As a Patient</a>
+  						</div>
+					</div>
+    				<i class="fa fa-bars"></i>
+			</div>
+    
+    </div>
+</div>
+
+<h2><em>Create New ChatRoom</em></h2>
+<div class="mydiv">
+<form>
+	<br><br>
+	<label for="roomname">Enter ChatRoom name:</label>
+	<input type="text" id="roomname"><br><br>
+
+	<button type="button">Create</button>
+<br><br>
+</form>
+
+</div>
+<!--footerrr-->
+<div class="contact">
+       
+<footer>
+	  <br>Click on the following links to get divisioned search results-
+	  <br><a href="mental illness.html">Mental Illness</a><br>
+	  <a href="physical illness.html">Physical Illness</a><br>	
+
+
+	<h2><em>Contact Us</em></h2>
+	Email-	<br> 
+	<a href="gmail">abcdd@gmail.com</a><br>
+		<a href="gmail">xyzedf@gmail.com</a><br>
+		<a href="gmail">bnhukij@yahoo.com</a><br>
+	
+	<br>Tele Phone-<br>
+		223-334-2345 <br>
+		223-334-2346 <br>
+		223-334-2347<br>
+		223-334-2348<br><br>
+	
+
+</footer>
+</div>
+</body>
+</html>

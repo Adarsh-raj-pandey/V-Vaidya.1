@@ -1,0 +1,74 @@
+
+<head>
+	<title> SignUp as Patient</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/signup_as_patient.css">
+	<script type="text/javascript" src="/scripts/script.js"></script>
+</head>
+
+<body>
+
+<!--page header-->
+<div class="header">
+	<h1>V-Vaidya<img src="https://img.icons8.com/ios/50/000000/stethoscope.png" width="75" height="75" />
+	<div class="flex-container">
+	<div class="form">
+		<form action="/users/create" method="POST"> 
+		<h1 style="font-family: BatangChe"><b>SignUp</b> </h1>
+          <div class="input">
+          	<div class="inputbox">
+				<label for="name" class="label">Name:</label>
+					<input type="text" id="name" placeholder="Ram" name="name"><br><br>
+			</div>
+
+Contact information.<br><br>
+			<div class="inputbox">
+				<label for="mobile" class="label">Mobile No.:</label> 
+					<input type="text" id="mobile" name="contactNumber"><br><br>
+			</div>
+			<div class="inputbox">
+				<label for="email" class="label">Email address:</label> 
+					<input type="email" id="email" placeholder="eg: ram@abcd.com" size="40" name="email"><br><br>
+			</div>
+			<div class="inputbox">
+				<label for="psw">Password:</label>
+					<input type="password" id="psw" placeholder="password" name="password"><br><br><br>
+			</div>
+			<div class="inputbox">
+				<label for="cpsw">Confirm Password:</label>
+					<input type="password" id="cpsw" placeholder="password" name="confirm_password"><br><br><br>
+			</div>
+
+Gender:<br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+
+  <br>  
+
+  Age:<br>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+<div class="inputbox">
+	<label for="DOB">Date of birth:</label>
+		<input type="date" id="DOB"><br><br><br>
+</div>
+
+     <div class="inputbox">
+	    <input type="Submit">
+     </div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+</body>

@@ -1,0 +1,47 @@
+<header>
+  
+ 	<!--sidebar-->
+   <link rel="stylesheet" type="text/css" href="/css/_header.css">
+   <script type="text/javascript" src="/scripts/script.js"></script>
+
+
+<!--Responsive Navbar -->
+<div class="navbar" id="mynavbar">
+	<div id="main">
+ 		 <button class="openbtn" onclick="openNav()">☰ </button>  
+			<div class="navbar-right">      
+        <% if (locals.user) {%>
+          <li> <a href="/users/profile">
+              <%= user.name %>
+          </a>
+         </li>    
+          <li>
+              <a href="/users/signout">Sign Out</a>
+          </li>
+          <% }else{ %>
+            <li>
+              
+                <a href="/users/signin"><span class="glyphicon glyphicon-user"></span>Sign In</a>
+            </li>
+             <li>
+                <a href="/users/signup">Sign Up</a>    
+            </li>
+            <% } %>
+
+					
+    				<i class="fa fa-bars"></i>
+			</div>
+    
+    </div>
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="/users/mental_illness">Mental Illness</a>
+  <a href="/users/physical_illness">Physical Illness</a>
+  <a href="/users/home">HOME</a>
+</div>
+
+
+ 
+</header>

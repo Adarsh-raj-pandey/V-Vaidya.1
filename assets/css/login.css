@@ -1,0 +1,269 @@
+*{
+
+  margin: 0;
+  padding: 2px;
+   font-family: BatangChe;
+   background-size: cover;
+}
+
+body{
+  align-content: center;
+}
+
+.sidebar {
+  height: 25%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  font-family: BatangChe;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: white
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  font-family: BatangChe;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.header{
+  padding: 34px;
+  margin-top: 15px;
+    height: 20vh;
+  background-color: coral;                         
+  background-size: cover;
+  color: black;
+  text-align: center;
+  align-content: center;
+  font-size: 35px;
+  font-family: BatangChe;
+}
+
+.navbar{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+ overflow: hidden;
+ font-family: BatangChe;
+ background-color: #FF8C00;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+  .navbar a:hover {
+  background-color: #f8f8ff;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #FF8C00;
+  color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.navbar-right{
+  float: right;
+}
+
+input[type=email],[type=password]{
+      width:100%;
+      padding:12px 20px;
+      margin: 8px;
+      display:inline-block;
+      border:1px solid #ccc;
+      box-sizzing:border-box;
+    }
+
+    .button{
+      align-content: right;
+      background-color:gray;
+      color:black;
+      padding:14px 20px;
+      margin:8px 0;
+      border: none;
+      cursor:pointer;
+      width:100%;
+    }
+
+    button:hover{
+      opacity:0.5;
+    }   
+
+    .cancelbtn{
+      text-align: right;
+      width:auto;
+      padding:10px 18px;
+      background-color:red;
+    }
+
+    .container{
+      padding:16px;
+    }
+    
+    span.psw{
+      float:right;
+      padding-top:16px;
+    }
+  //for mobiles
+
+    @media screen and(max width:300px){
+      span.psw{
+        display:block;
+        float:none;
+      }
+      .cancelbtn{width:100%;}
+    }
+/*hover*/
+.dropbtn {
+  background-color: #add8e6;
+  font-family: BatangChe;
+  color: black;
+  float: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus{
+  background-color: #2980b9;
+}
+
+.dropdown {
+  float: none;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: gray;}
+.dropdown:hover .dropdown-content {display: block;
+float: none;
+}
+
+
+.flex-container{
+  position: sticky;
+  top: 0;
+  margin-top:50px;
+  justify-content: space-between;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: whitesmoke;
+  margin: 10px;
+  padding: 100px;
+  font-size: 20px;
+}
+.flex-container > div > div
+{
+  text-align: left;
+}
+
+.form{
+  position: relative;
+  width: 650px;
+  margin: 0 auto;
+/*  padding: 10px 10px 30px;*/
+  border-radius: 40px;
+  text-align: center;
+    box-shadow: 5px 5px 30px rgba(255,255,255,0.5),
+          10px 10px 30px rgba(10,10,10,0.5);
+}
+
+.form > h1 {
+  font-family: Helvetica;
+}
+
+.input
+{
+  text-align: left;
+  margin-top: 40px;
+}
+.inputbox
+{
+  padding: 5px;
+  border-radius: 30px;
+  box-decoration-break: initial;
+}
+.label{
+  text-align: left;
+}

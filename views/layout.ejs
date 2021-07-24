@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            <%= title  %>
+        </title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/layout.css">
+        <%- style %> 
+        <%-script %>
+
+    </head>
+
+    <body>
+        <%- include('_header'); %>
+
+        <%- body %>
+          
+        <%- script %>
+
+        <%- include('_footer'); %>
+
+        
+    </body>
+</html>
